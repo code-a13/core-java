@@ -16,13 +16,11 @@ interface Cleaner{
 class HouseRobot implements Chef,Cleaner{
     
     @Override
-    public
-    void cookFood(){
+    public void cookFood(){
         System.out.println("Cooking Pasta...");
     }
     @Override
-    public
-    void cleanFloor(){
+    public void cleanFloor(){
         System.out.println("Cleaning the living room...");
     }
 }

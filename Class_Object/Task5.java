@@ -30,21 +30,21 @@ class Driver{
 
 }
 class Rider{
-    int PickupLocation;
-    int DropLocation;
-    Rider(int PickupLocation,int DropLocation){
-        this.PickupLocation=PickupLocation;
-        this.DropLocation=DropLocation;
+    int pickuplocation;
+    int droplocation;
+    Rider(int pickuplocation,int dropLocation){
+        this.pickuplocation=pickuplocation;
+        this.droplocation=dropLocation;
     }
 }
 class RideApp{
     int fare = 0;
     void bookcab(Rider r,Driver d){
         if(d.isAvailable){
-            int distance = Math.abs(r.DropLocation - r.PickupLocation);
+            int distance = Math.abs(r.droplocation - r.pickuplocation);
             fare = distance * 15;
             d.isAvailable = false;
-            d.currentLocation = r.DropLocation;
+            d.currentLocation = r.droplocation;
             System.out.println("FARE: "+fare);
         }
     }

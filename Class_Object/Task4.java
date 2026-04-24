@@ -21,10 +21,12 @@ public class Task4 {
         else{
             System.out.println("Invalid Product ID");
         }
-        cart.CartDetails();
+        cart.cartDetails();
         System.out.println("Stock remaining "+p1.stockQuantity);
         System.out.println("Stock remaning "+p2.stockQuantity);
+        sc.close();
     }
+    
 }
 class Product{
     int id ;
@@ -50,7 +52,7 @@ class Cart{
             System.out.println("Out of Stock for "+p.name +"Stock: "+p.stockQuantity);
         }
     }
-    void CartDetails(){
+    void cartDetails(){
         System.out.println("Total Amount: "+totalAmount);
         
     }

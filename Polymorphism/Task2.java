@@ -9,23 +9,20 @@ public class Task2 {
     }
 }
 class Device{
-    public
-    void powerOn(){
+    public void powerOn(){
         
         System.out.println("1. Connecting to power supply...");
     }
 }
 class TV extends Device{
-    public 
-    void powerOn(){
+    public void powerOn(){
         super.powerOn();
         System.out.println("2. TV Display ON");
     }
 }
 
 class AC extends Device{
-    public 
-    void powerOn(){
+    public void powerOn(){
         super.powerOn();
         System.out.println("2. AC Cooling Started");
     }

@@ -14,15 +14,13 @@ interface PaymentMethod{
 }
 class UPI implements PaymentMethod{
     @Override
-    public
-    void processPayment(double amount){
+    public void processPayment(double amount){
         System.out.println("Processing via Scanner");
     }
 }
 class CreditCard implements PaymentMethod{
     @Override
-    public
-    void processPayment(double amount){
+    public void processPayment(double amount){
         System.out.println("Processing via PIN");
     }
 }
